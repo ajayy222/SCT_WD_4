@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modern To-Do App</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="app-container">
-    <h1>📌 My Tasks</h1>
+     <div class="app-container">
+    <h1>📅 To-Do App</h1>
     <div class="task-input">
-      <input type="text" id="task-input" placeholder="Add your task...">
-      <button id="add-btn">Add</button>
+      <input type="text" id="task-text" placeholder="Task description...">
+      <input type="datetime-local" id="task-time">
+      <button onclick="addTask()">Add Task</button>
     </div>
     <ul id="task-list"></ul>
   </div>
